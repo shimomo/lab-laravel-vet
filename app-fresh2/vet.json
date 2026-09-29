@@ -1,0 +1,19 @@
+{
+    "require": {
+        "psr/log": {
+            "version": "3.0.0",
+            "hash": "tree-v2:458606c6c49e2ba2f8d35bb4ddef9626b40c525a10cc03fe122fc70bc68ae2ac"
+        },
+        "vetlab/widget": {
+            "version": "1.0.0",
+            "hash": "tree-v2:f33f33b7718419de5216dcc6494b9ff3d6fdb994c9da49db5dd8f8615ec3cd30"
+        }
+    },
+    "require-dev": {
+        "laravel/vet": {
+            "version": "v0.2.1",
+            "hash": "tree-v2:7c555b9f7eb265649d89769aa9b07bafc809d9e52d15ecdc3a84ee1c59fa767e"
+        }
+    },
+    "minimum-release-age": 7
+}

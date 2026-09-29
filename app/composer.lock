@@ -1,0 +1,167 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "e869ee21bc6075a20112f850fd96e253",
+    "packages": [
+        {
+            "name": "psr/log",
+            "version": "3.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "f16e1d5863e37f8d8c2a01719f5b34baa2b714d3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/f16e1d5863e37f8d8c2a01719f5b34baa2b714d3",
+                "reference": "f16e1d5863e37f8d8c2a01719f5b34baa2b714d3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Log\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/log/tree/3.0.2"
+            },
+            "time": "2024-09-11T13:17:53+00:00"
+        },
+        {
+            "name": "vetlab/widget",
+            "version": "1.0.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://127.0.0.1:8443/dist/vetlab-widget-v1.0.0.zip",
+                "reference": "7ac19ee157556944f6939fe82286468b89688712",
+                "shasum": "42ef68d021b167ec7e01e474f7f8a1635db3bfb1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Vetlab\\Widget\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Fake package for verifying laravel/vet",
+            "time": "2026-09-01T00:00:00+00:00"
+        }
+    ],
+    "packages-dev": [
+        {
+            "name": "laravel/vet",
+            "version": "v0.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/vet.git",
+                "reference": "7b10fd2beecf9f386c92731729c9f33a152b213b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/vet/zipball/7b10fd2beecf9f386c92731729c9f33a152b213b",
+                "reference": "7b10fd2beecf9f386c92731729c9f33a152b213b",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^2.0",
+                "ext-dom": "*",
+                "ext-mbstring": "*",
+                "ext-openssl": "*",
+                "ext-phar": "*",
+                "ext-tokenizer": "*",
+                "ext-zip": "*",
+                "php": "^8.4"
+            },
+            "require-dev": {
+                "guzzlehttp/guzzle": "^7.15.5|^8.0",
+                "laravel-zero/foundation": "^13.25",
+                "laravel-zero/framework": "^13.0",
+                "laravel/pint": "^1.32.1",
+                "mockery/mockery": "^1.6.15",
+                "pestphp/pest": "^5.2.1",
+                "pestphp/pest-plugin-phpstan": "^5.2.1",
+                "pestphp/pest-plugin-rector": "^5.0.4",
+                "phpstan/phpstan": "^2.2.16",
+                "rector/rector": "^2.6.7"
+            },
+            "bin": [
+                "builds/vet"
+            ],
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Laravel\\Vet\\Composer\\Plugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "App\\": "app/",
+                    "Laravel\\Vet\\Composer\\": "src/Composer/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nuno Maduro",
+                    "email": "enunomaduro@gmail.com"
+                }
+            ],
+            "description": "A dependency audit trust file for PHP.",
+            "keywords": [
+                "Audit",
+                "cli",
+                "composer",
+                "console",
+                "dev",
+                "php",
+                "security",
+                "supply chain"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel/vet/issues",
+                "source": "https://github.com/laravel/vet/tree/v0.2.1"
+            },
+            "time": "2026-09-27T14:39:48+00:00"
+        }
+    ],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {},
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {},
+    "platform-dev": {},
+    "plugin-api-version": "2.9.0"
+}

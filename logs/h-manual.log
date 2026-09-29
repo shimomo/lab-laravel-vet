@@ -1,0 +1,83 @@
+
+  to review (1)
+
+  psr/log 3.0.0 → 3.0.2 .................................................................................................. 5 files changed  
+  │
+  │   ~ src/LoggerAwareInterface.php
+  │     @@ -9,10 +9,6 @@
+  │      {
+  │          /**
+  │           * Sets a logger instance on the object.
+  │     -     *
+  │     -     * @param LoggerInterface $logger
+  │     -     *
+  │     -     * @return void
+  │           */
+  │          public function setLogger(LoggerInterface $logger): void;
+  │      }
+  │
+  │   ~ src/LoggerAwareTrait.php
+  │     @@ -9,15 +9,11 @@
+  │      {
+  │          /**
+  │           * The logger instance.
+  │     -     *
+  │     -     * @var LoggerInterface|null
+  │           */
+  │          protected ?LoggerInterface $logger = null;
+  │      
+  │          /**
+  │           * Sets a logger.
+  │     -     *
+  │     -     * @param LoggerInterface $logger
+  │           */
+  │          public function setLogger(LoggerInterface $logger): void
+  │          {
+  │
+  │   ~ src/LoggerInterface.php
+  │     @@ -22,10 +22,7 @@
+  │          /**
+  │           * System is unusable.
+  │           *
+  │     -     * @param string|\Stringable $message
+  │           * @param mixed[] $context
+  │     -     *
+  │     -     * @return void
+  │           */
+  │          public function emergency(string|\Stringable $message, array $context = []): void;
+  │      
+  │     @@ -35,10 +32,7 @@
+  │           * Example: Entire website down, database unavailable, etc. This should
+  │
+  │   ~ src/LoggerTrait.php
+  │   ~ src/NullLogger.php
+  │
+  │   … and 207 more lines, with [./vendor/bin/vet psr/log]
+  │
+  Packages: 1 to review, 2 trusted
+
+ ┌ How do you want to review these packages? ──────────────────────────┐
+ │ › ● Manually, and pick the packages that I trust                    │
+ │   ○ Automatically, with my coding agent reading the changes first   │
+ └─────────────────────────────────────────────────────────────────────┘
+
+ ┌ How do you want to review these packages? ───────────────────┐
+ │ Manually, and pick the packages that I trust                 │
+ └──────────────────────────────────────────────────────────────┘
+
+ ┌ Which packages do you trust? ────────────────────────────────┐
+ │ › ◻ psr/log  3.0.0 → 3.0.2                                   │
+ └──────────────────────────────────────────────────────────────┘
+  Press the space bar to pick a package, ctrl+a to pick every package, enter to record the ones that you picked, and escape to go back.
+ ┌ Which packages do you trust? ────────────────────────────────┐
+ │ › ◼ psr/log  3.0.0 → 3.0.2                                   │
+ └──────────────────────────────────────────────────────────────┘
+  Press the space bar to pick a package, ctrl+a to pick every package, enter to record the ones that you picked, and escape to go back.
+ ┌ Which packages do you trust? ────────────────────────────────┐
+ │ 1 picked                                                     │
+ └──────────────────────────────────────────────────────────────┘
+
+   INFO  Recorded [psr/log] [3.0.2] at [0f88d9371ba0].  
+
+   INFO  Run [composer install] to write those bytes to vendor/.  
+

@@ -1,0 +1,23 @@
+# setup.sh が作り直すもの（秘密鍵と絶対パスを含む）
+/ca/
+/env.sh
+/php-ini/
+
+# キャッシュ
+/.composer-cache/
+/.composer-home/
+/.vet-cache/
+
+# composer install で復元できるもの
+vendor/
+
+# build_repo.py が作り直すもの
+/repo/packages.json
+/repo/dist/*.zip
+
+# 実行中だけ意味を持つもの
+/logs/serve.pid
+/logs/serve.out
+
+# 公開しない下書き
+/blog-draft.md

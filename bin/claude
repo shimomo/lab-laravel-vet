@@ -1,0 +1,8 @@
+#!/bin/sh
+# Stub agent: keeps the exact prompt and arguments that vet sends, then answers "clear"
+# without reading anything. It lets us inspect what the agent would see without spending tokens.
+dir="${VETLAB_PROMPT_DIR:-.}"
+n=$(date +%s%N)
+cat > "$dir/prompt-$n.txt"
+printf '%s\n' "$@" > "$dir/args-$n.txt"
+echo '{"verdict":"clear","summary":"stub agent: recorded the prompt without reading it","findings":[]}'

@@ -1,0 +1,23 @@
+{
+    "name": "vetlab/app",
+    "type": "project",
+    "require": {
+        "psr/log": "^3.0",
+        "vetlab/widget": "1.0.0"
+    },
+    "require-dev": {
+        "laravel/vet": "^0.2"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://127.0.0.1:8443"
+        }
+    ],
+    "config": {
+        "allow-plugins": {
+            "laravel/vet": true
+        },
+        "sort-packages": true
+    }
+}

@@ -1,0 +1,8 @@
+--print
+--tools
+
+--no-session-persistence
+--output-format
+json
+--json-schema
+{"type":"object","additionalProperties":false,"required":["verdict","summary","findings"],"properties":{"verdict":{"type":"string","enum":["clear","risk"]},"summary":{"type":"string","maxLength":100},"findings":{"type":"array","maxItems":20,"items":{"type":"object","additionalProperties":false,"required":["path","reason"],"properties":{"path":{"type":"string"},"reason":{"type":"string"}}}}}}
